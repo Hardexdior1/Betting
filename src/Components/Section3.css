@@ -1,0 +1,43 @@
+/* .section3{
+    width: 85%;
+    border: 1px solid blue;
+    margin: 0 auto;
+} */
+
+.sec3div{
+    
+    /* height: 65px; */
+     /* width: 85%;  */
+    /* padding: 10px 10px 7px; */
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    vertical-align: middle;
+    background-color: beige;
+    border-radius: 10px;
+    width: 90%;
+    height: 70px;
+    max-width: 400px;
+    /* padding-top: 10px; */
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+.sec3div img{
+    object-fit: cover;
+    height: 50px;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+.annual{
+    line-height: 10px;
+}
+.a{
+    margin-right: 10px;
+
+}
+.a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}

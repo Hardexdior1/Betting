@@ -1,0 +1,113 @@
+
+body{
+    font-family: sans-serif;
+    position: relative;
+    /* justify-content: center; */
+   
+    padding-bottom: 50px;
+    background-image: linear-gradient(rgb(255, 248, 248),rgb(254, 254, 255));
+}
+
+.wrap{
+    max-width: 600px;
+    margin: 10px auto 10px ;
+    border: 2px solid grey;
+    padding: 12px;
+    /* position: absolute; */
+    /* left: 0;
+    right: 0; */
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* top: 0; */
+    /* bottom: 0; */
+    box-shadow: 3px 3px 2px rgb(194, 184, 184);
+    border-radius: 10px;
+    position: relative;
+}
+input{
+    padding: 10px 50px;
+    caret-color: green;
+    color: green;
+    border: 1px solid grey;
+}
+.btn{
+    padding: 10px 35px;
+    border: 1px solid green;
+    color: green;
+    font-weight: bold;
+  background-color: white;
+  transition: 0.3s;
+cursor: pointer;
+}
+.btn:hover{
+    background-color: green;
+    color: white;
+}
+@media (max-width:425px) {
+    .btn{
+        margin-top: 10px;
+    }
+}
+.winningMessage{
+    color: green;
+}
+.winningLooseMessage{
+    color: red;
+}
+.h3{
+    margin: 10px auto 10px ;
+}
+/* question .css */
+.wrap2{
+    text-align: left;
+    /* align-items: center; */
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    max-width: 620px;
+    margin: 0 auto;
+
+    
+}
+.questionCarrier{
+    box-shadow: 3px 3px 2px rgb(150, 140, 140);
+    padding: 7px;
+    border-radius: 8px;
+    border: 1px solid grey;
+    margin: 6px;
+    transition: 0.3s;
+}
+.wrap2 p{
+    word-spacing: 2px;
+    font-weight: lighter;
+    transition: 0.3s;
+
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    transition: 0.3s;
+
+}
+.showBtn{
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.benefitBtn{
+    margin-top: 10px;
+}
+
+
+.instructionDiv{
+    border: 1px solid rgb(238, 68, 68);
+    padding: 10px 5px;
+    background-color: rgb(241, 235, 235);
+    position: absolute;
+    border-radius: 1rem;
+}

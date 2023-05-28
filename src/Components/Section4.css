@@ -1,0 +1,49 @@
+
+.div{
+    /* background-color: white; */
+    padding-bottom: 20px;
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-bottom-left-radius:10px ;
+    border-bottom-right-radius:10px ;
+
+}
+
+.button1{
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(39, 18, 231);
+    border: none;
+    color: white;
+    transition: 0.3s;
+}
+.button1:hover{
+    box-shadow: 10px 10px 6px rgb(233, 196, 233);
+    cursor: pointer;
+
+}
+.button2{
+    background-color: white;
+    color: black;
+    width: 100%;
+    border-radius: 5px;
+    max-width: 400px;
+    height: 50px;
+    border: none;
+    margin-top: 10px;
+}
+.button2:hover{
+        cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
