@@ -32,7 +32,8 @@ const Bet = () => {
   // instruction 
   const [showInstruction,setShowInstruction]=useState(false);
 
-    
+    // show guess input
+    const[showGuessInput,setShowGuessInput]=useState(true)
 
   const removeSTaking = () => {
     if (inputValue == "") {
@@ -69,6 +70,8 @@ const Bet = () => {
       // changeColor.current.classList.contains('winningLooseMessage')
       changeColor.current.classList.remove("winningLooseMessage");
       changeColor.current.classList.add("winningMessage");
+      setShowGuessInput(false);
+
 
       setRandomValue(randomNumber);
       setShowReBetButton(true);
@@ -79,6 +82,8 @@ const Bet = () => {
       setShowReBetButton(true);
       changeColor.current.classList.remove("winningMessage");
       changeColor.current.classList.add("winningLooseMessage");
+      setShowGuessInput(false);
+
     }
     
   };
@@ -110,11 +115,14 @@ const Bet = () => {
             <h4 ref={changeColor} className="winningMessage">
               {checkIfUserWin}
             </h4>
-            <input
-              placeholder="guess a number"
-              type="number"
-              onChange={guessedNumber}
-            />
+            {showGuessInput?
+             <input
+             placeholder="guess a number"
+             type="number"
+             onChange={guessedNumber}
+           />:''
+            }
+           
 
             {showReBetButton ? (
               <button
@@ -129,7 +137,9 @@ const Bet = () => {
                 Bet again
               </button>
             ) : (
-              <button className="btn" onClick={ranDom}>
+              <button className="btn" onClick={()=>{
+                ranDom()
+              }}>
                 Check computer number
               </button>
             )}
@@ -147,6 +157,8 @@ const Bet = () => {
               onClick={() => {
                 removeSTaking();
                 setShowReBetButton(false);
+                setShowGuessInput(true);
+                setShowGuessInput(true)
               }}>
               place bet
             </button>
@@ -168,6 +180,8 @@ const Bet = () => {
         )}
       
       </div>
+      <h2>frequently asked questions </h2>
+
       {questions.map((question) => {
         return <Answer key={question.id} {...question} />;
       })}

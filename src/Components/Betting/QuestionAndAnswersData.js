@@ -3,7 +3,7 @@ const Questions = [
     id: 1,
     question: "How do i guess get the right answer ?",
     answer:
-      'i also don"t know what the right answer might be, because the answer would always be in between 1-5 and it is generated randomly',
+      'i also don"t know what the right answer might be, but the answer will always be in between 1-5 and it is generated randomly',
   },
 
   {
@@ -24,7 +24,7 @@ const Questions = [
     id: 4,
     question: "What is the meaning of random ?",
     answer:
-      " a random number can be any number, but in this game the random number would always be in between 1-5 ..so the right answer will always change each time you click on the check computer number button",
+      " a random number can be any number, but in this game the random number would always be in between 1-5 ..so the right answer will always change each time you place a bet",
   },
   {
     id: 5,

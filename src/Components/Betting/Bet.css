@@ -5,7 +5,9 @@ body{
     /* justify-content: center; */
    
     padding-bottom: 50px;
-    background-image: linear-gradient(rgb(255, 248, 248),rgb(254, 254, 255));
+    /* background: linear-gradient(to right, #1abc9c, #2ecc71, #3498db, #9b59b6, #34495e, #f1c40f, #e67e22, #e74c3c); */
+
+    background-image: linear-gradient(rgb(255, 248, 248),rgb(248, 248, 252));
 }
 
 .wrap{
