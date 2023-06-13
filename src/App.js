@@ -11,7 +11,7 @@ function App() {
   const [searchTerm,setSearchTerm]=useState('')
   return (
     <div className="App">
-            <h2>Betting Project</h2>
+            <h2 className="bet">Betting Project</h2>
 
 
       <small>Coded by <b>{' <>oluwadamilare </>'}</b> </small>

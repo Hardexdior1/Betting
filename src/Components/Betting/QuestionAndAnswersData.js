@@ -1,7 +1,7 @@
 const Questions = [
   {
     id: 1,
-    question: "How do i guess get the right answer ?",
+    question: "How do i guess  the right answer ?",
     answer:
       'i also don"t know what the right answer might be, but the answer will always be in between 1-5 and it is generated randomly',
   },
@@ -30,7 +30,7 @@ const Questions = [
     id: 5,
     question: "How do i know if i win",
     answer:
-      ' you"ll only win if you guess a number and it is same as the random number after clicking the check number button and your balance would be updated immediately  you win ',
+      ' you"ll only win if you guess a number and it is same as the number computer brings   after clicking the check number button and your balance would be updated immediately  you win ',
   },
 ];
 
