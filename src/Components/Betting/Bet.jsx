@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "./Bet.css";
 import { useState } from "react";
-// import Answer from "./Answer";
+import Answer from "./Answer";
 import Questions from "./QuestionAndAnswersData";
 
 // won sope kin ma lo sun le wipe kin order rossey mo ni mo like champaighn emi omo ope o , mo sare fo wo mi shaye ..mefa lo le mr money oshey o emi omo ope o
@@ -40,7 +40,7 @@ const Bet = () => {
   const [showGuessInput, setShowGuessInput] = useState(true);
 
   const removeSTaking = () => {
-    if (inputValue === "") {
+    if (inputValue == "") {
       alert('please the input can"t be empty');
     } else if (inputValue > TotalBalance) {
       alert("sorry your Balance is not up to that");
@@ -66,12 +66,12 @@ const Bet = () => {
     console.log(randomNumber);
 
     if (
-      userGuessedNumber === "" ||
+      userGuessedNumber == "" ||
       userGuessedNumber > 5 ||
       userGuessedNumber < 1
     ) {
       setShowInstruction(true);
-    } else if (inputValue > 9 && randomNumber === userGuessedNumber) {
+    } else if (inputValue > 9 && randomNumber == userGuessedNumber) {
       console.log("you won");
       setTotalBalance(TotalBalance + inputValue * 3);
       setCheckIfUserWin("you win congrats your balance has been updated ");
@@ -82,7 +82,7 @@ const Bet = () => {
 
       setRandomValue(randomNumber);
       setShowReBetButton(true);
-    } else if (randomNumber === userGuessedNumber) {
+    } else if (randomNumber == userGuessedNumber) {
       console.log("you won");
       setTotalBalance(TotalBalance + inputValue * 2);
       setCheckIfUserWin("you win congrats your balance has been updated ");
@@ -101,7 +101,7 @@ const Bet = () => {
       changeColor.current.classList.remove("winningMessage");
       changeColor.current.classList.add("winningLooseMessage");
       setShowGuessInput(false);
-    } else if (TotalBalance === 0) {
+    } else if (TotalBalance == 0) {
       alert("your balance is low ..use the offer to update your balance ");
     }
   };

@@ -16,8 +16,7 @@ body{
     padding: 20px;
     /* background-color: rgb(77, 13, 161); */
     margin-top: 20px;
-    flex-direction: row-reverse;
-    gap: 20px;
+   gap: 20px;
 
 }
 @media (min-width:671px) {
